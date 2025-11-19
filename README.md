@@ -439,8 +439,8 @@ flutter pub get && flutter run
 | *Confirmación antes de eliminar un hábito permanentemente* | *Banner mostrando estado de sincronización en proceso* | *Funcionamiento completo sin conexión a internet* |
 
 | Vista Completados | Vista Pendientes | Sistema de Rachas |
-|:-----------------:|:-----------------:|:----------------:|:-----------------:|
-| ![Completados](screenshots/completados.jpg) | ![Pendientes](screenshots/pendientes.jpg) | ![Rachas](screenshots/racha.jpg) |
+|:-----------------:|:-----------------:|:----------------:|
+| ![Completados](screenshots/completados.jpg) | ![Pendientes](screenshots/pendientes.jpg) | ![Rachas](screenshots/rachas.jpg) |
 | *Filtro mostrando solo hábitos completados del día* | *Filtro mostrando hábitos pendientes por completar* | *Filtro de hábitos con días consecutivos activos 🔥* |
 ---
 
