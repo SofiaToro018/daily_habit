@@ -1,0 +1,21 @@
+{
+  "name": "habit-tracker-api-mock",
+  "version": "1.0.0",
+  "description": "API Mock para Habit Tracker usando json-server",
+  "main": "server.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000 --host 0.0.0.0",
+    "start:local": "json-server --watch db.json --port 3000"
+  },
+  "keywords": [
+    "json-server",
+    "api",
+    "mock",
+    "habits"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

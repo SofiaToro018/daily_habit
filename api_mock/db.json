@@ -1,0 +1,34 @@
+{
+  "habits": [
+    {
+      "id": "1",
+      "title": "Hacer ejercicio",
+      "description": "30 minutos de cardio cada mañana",
+      "completed": false,
+      "updatedAt": "2025-11-18T08:00:00.000Z",
+      "deleted": false,
+      "lastCompletedAt": null,
+      "streak": 0
+    },
+    {
+      "id": "2",
+      "title": "Leer 20 páginas",
+      "description": "Leer antes de dormir",
+      "completed": true,
+      "updatedAt": "2025-11-18T22:00:00.000Z",
+      "deleted": false,
+      "lastCompletedAt": "2025-11-18T22:00:00.000Z",
+      "streak": 5
+    },
+    {
+      "id": "3",
+      "title": "Meditar",
+      "description": "10 minutos de meditación guiada",
+      "completed": false,
+      "updatedAt": "2025-11-18T07:00:00.000Z",
+      "deleted": false,
+      "lastCompletedAt": "2025-11-17T07:00:00.000Z",
+      "streak": 3
+    }
+  ]
+}
