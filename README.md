@@ -428,83 +428,20 @@ flutter pub get && flutter run
 
 ## 🎨 Capturas de Pantalla
 
-### Pantalla Principal
+| Crear Hábito | Listar Hábitos | Editar Hábito |
+|:------------:|:--------------:|:-------------:|
+| ![Crear](screenshots/crear.jpg) | ![Listar](screenshots/listar.jpg) | ![Editar](screenshots/editar.jpg) |
+| *Dialog para agregar nuevo hábito con título y descripción* | *Vista principal con todos los hábitos y filtros activos* | *Modificar título y descripción de hábitos existentes* |
 
-```
-┌─────────────────────────────┐
-│  ← Mis Hábitos      [2] 🔄 │  ← Header con contador de pendientes
-├─────────────────────────────┤
-│  [Todos] Pendientes         │  ← Filtros
-│  Completados  Rachas 🔥     │
-├─────────────────────────────┤
-│  ○ Hacer ejercicio          │  ← Card de hábito
-│    30 min de cardio         │
-│    🔥 3 días de racha        │
-├─────────────────────────────┤
-│  ✓ Leer 20 páginas          │  ← Hábito completado
-│    Antes de dormir          │
-│    🔥 5 días de racha        │
-├─────────────────────────────┤
-│  ○ Meditar                   │
-│    10 minutos                │
-└─────────────────────────────┘
-         [+ Nuevo Hábito]      ← FAB
-```
+| Eliminar Hábito | Sincronización | Sin Conexión |
+|:---------------:|:--------------:|:------------:|
+| ![Eliminar](screenshots/eliminar.jpg) | ![Sincronización](screenshots/sincronizacion.jpg) | ![Sin Conexión](screenshots/sin_conexion.jpg) |
+| *Confirmación antes de eliminar un hábito permanentemente* | *Banner mostrando estado de sincronización en proceso* | *Funcionamiento completo sin conexión a internet* |
 
-### Dialog Crear Hábito
-
-```
-┌─────────────────────────┐
-│   Nuevo Hábito          │
-├─────────────────────────┤
-│  Título*                │
-│  [Ej: Hacer ejercicio]  │
-│                         │
-│  Descripción (opcional) │
-│  [Ej: 30 min cardio]    │
-│  [                   ]  │
-│  [                   ]  │
-├─────────────────────────┤
-│   [Cancelar]  [Crear]   │
-└─────────────────────────┘
-```
-
-### Banner de Sincronización
-
-```
-┌─────────────────────────────┐
-│ ✓ Sincronización completada │  ← Banner success
-│   2 operaciones sincronizadas│
-│                          [×] │
-└─────────────────────────────┘
-
-┌─────────────────────────────┐
-│ ⚠ Error al sincronizar      │  ← Banner error
-│   Sin conexión a Internet   │
-│                          [×] │
-└─────────────────────────────┘
-```
-
-### Estado Vacío
-
-```
-┌─────────────────────────────┐
-│                             │
-│         📋                  │
-│                             │
-│   No hay hábitos aún        │
-│                             │
-│ Crea tu primer hábito       │
-│    para comenzar            │
-│                             │
-└─────────────────────────────┘
-```
-
-> 💡 **Nota**: Para capturas reales, ejecuta la app y toma screenshots con:
-> - Emulador Android: Botón de cámara
-> - Dispositivo físico: Botón de volumen + power
-> - Guardar en carpeta `screenshots/` del proyecto
-
+| Vista Completados | Vista Pendientes | Sistema de Rachas |
+|:-----------------:|:-----------------:|:----------------:|:-----------------:|
+| ![Completados](screenshots/completados.jpg) | ![Pendientes](screenshots/pendientes.jpg) | ![Rachas](screenshots/racha.jpg) |
+| *Filtro mostrando solo hábitos completados del día* | *Filtro mostrando hábitos pendientes por completar* | *Filtro de hábitos con días consecutivos activos 🔥* |
 ---
 
 ## 🎯 Detalles Técnicos Avanzados
@@ -953,34 +890,6 @@ flutter logs | findstr "Sync"
 
 ---
 
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT.
-
-## 📄 Documentación Adicional
-
-- 📘 [Guía Rápida de Inicio](GUIA_RAPIDA.md) - Tutorial de 5 minutos
-- 🧪 [Guía de Pruebas](GUIA_PRUEBAS.md) - Checklist completo de testing
-- ✅ [Cumplimiento de Requisitos](CUMPLIMIENTO_REQUISITOS.md) - Evaluación del taller
-- 🌐 [Documentación API Mock](api_mock/README.md) - Endpoints y configuración
-
----
-
-## 📝 Licencia
-
-Este proyecto está bajo la **Licencia MIT**. Ver archivo [LICENSE](LICENSE) para más detalles.
-
-```
-MIT License
-
-Copyright (c) 2025 Laura Sofia Toro
-
-Se concede permiso para usar, copiar, modificar, fusionar, publicar,
-distribuir, sublicenciar y/o vender copias del Software...
-```
-
----
-
 ## 👥 Autores
 
 <table>
@@ -997,50 +906,9 @@ distribuir, sublicenciar y/o vender copias del Software...
 </table>
 
 **Contacto:**
-- 📧 Email: [tu-email@ejemplo.com]
-- 💼 LinkedIn: [tu-perfil-linkedin]
-- 🐦 Twitter: [@tu-usuario]
+- 💼 LinkedIn: [www.linkedin.com/in/sofia-toro091025]
 
 ---
-
-## 🙏 Agradecimientos
-
-Un agradecimiento especial a:
-
-- 🦋 **Flutter Team** - Por crear un framework increíble y bien documentado
-- 🎨 **Remi Rousselet** - Creador de Riverpod, gestión de estado elegante
-- 🗄️ **SQLite Contributors** - Base de datos ligera y confiable
-- 🌐 **json-server** - Simplificación de APIs mock para desarrollo
-- 📚 **Google Fonts** - Tipografías hermosas y gratuitas
-- 🎓 **Universidad** - Por la formación académica y el proyecto del taller
-- 👨‍🏫 **Profesor** - Por la guía y enseñanza en Flutter
-
-### Librerías de Código Abierto Utilizadas
-
-| Paquete | Autor | Licencia |
-|---------|-------|----------|
-| flutter_riverpod | Remi Rousselet | MIT |
-| sqflite | Tekartik | MIT |
-| http | Dart Team | BSD-3-Clause |
-| connectivity_plus | Plus Plugins | BSD-3-Clause |
-| google_fonts | Material Foundation | Apache 2.0 |
-| flutter_animate | Grant Skinner | MIT |
-
----
-
-## 🌟 Contribuciones
-
-Aunque este es un proyecto académico, las contribuciones son bienvenidas:
-
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add: Amazing Feature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
----
-
-## 🔮 Roadmap
 
 ### Versión 1.1 (Próximamente)
 - [ ] Notificaciones push para recordatorios
@@ -1057,19 +925,6 @@ Aunque este es un proyecto académico, las contribuciones son bienvenidas:
 - [ ] Autenticación de usuarios
 - [ ] Sincronización en la nube
 - [ ] Modo colaborativo (compartir hábitos)
-
----
-
-## 📊 Estado del Proyecto
-
-![GitHub last commit](https://img.shields.io/github/last-commit/SofiaToro018/daily_habit)
-![GitHub issues](https://img.shields.io/github/issues/SofiaToro018/daily_habit)
-![GitHub stars](https://img.shields.io/github/stars/SofiaToro018/daily_habit)
-![GitHub forks](https://img.shields.io/github/forks/SofiaToro018/daily_habit)
-
-**Estado:** ✅ Completado y funcional  
-**Versión actual:** 1.0.0  
-**Última actualización:** 18 de noviembre de 2025
 
 ---
 
@@ -1099,14 +954,6 @@ Aunque este es un proyecto académico, las contribuciones son bienvenidas:
 
 **Desarrollado con ❤️ usando Flutter**
 
-```ascii
- ____        _ _         _   _       _     _ _   
-|  _ \  __ _(_) |_   _  | | | | __ _| |__ (_) |_ 
-| | | |/ _` | | | | | | | |_| |/ _` | '_ \| | __|
-| |_| | (_| | | | |_| | |  _  | (_| | |_) | | |_ 
-|____/ \__,_|_|_|\__, | |_| |_|\__,_|_.__/|_|\__|
-                 |___/                            
-```
 
 © 2025 Laura Sofia Toro - Todos los derechos reservados
 
